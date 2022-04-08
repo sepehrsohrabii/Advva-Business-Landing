@@ -13,6 +13,18 @@ body {
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #000000 !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #000000 !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #000000 !important;
+}
 .gray {
   color: #CACACA;
 }
@@ -45,6 +57,9 @@ h4 {
   font-weight: 900;
   color: black;
 }
+h5 {
+  font-weight: 900;
+}
 h6{
   font-weight: 700;
   color: black;
@@ -54,7 +69,9 @@ h6{
   box-shadow: unset !important;
 }
 @media (max-width:768px) {
-  
+  .button2 {
+    width: 100% !important;
+  }
   .mbapp-pic {
     overflow: hidden;
     object-position: 50% 50%;
@@ -69,10 +86,7 @@ h6{
   .mt-121{
     margin-top: 121px;
   }
-  .form-margin {
-    margin-bottom: -65px;
-    margin-top: 65px;
-  }
+  
   .gallery__image-container {
     height: 200px;
     margin: 0 10px;
@@ -91,6 +105,9 @@ h6{
   }
   h4 {
     font-size: 24px;
+  }
+  h5 {
+    font-size: 20px;
   }
   h6{
     font-size: 16px;
@@ -116,6 +133,10 @@ h6{
     margin: 0 10px;
     flex-shrink: 0;
   }
+}
+.sp-371 {
+ height: 371px;
+
 }
 /* Navbar - START */
 .navbar-toggle {
@@ -234,7 +255,7 @@ h6{
 /* Navbar - END */
 
 .form-control {
-  background-color: #EDEDED;
+  background-color: #ffffff;
   border: none;
   border-radius: 0;
 }
@@ -269,10 +290,7 @@ h6{
   min-height: 100%;
   opacity: 0.45;
 }
-.form-banner {
-  background-color: #504B8B;
-  background-image: linear-gradient(135deg, #504B8B, rgba(242, 100, 46, 0.5));
-}
+
 .form-banner2 {
   background-color: #504B8B;
   background-image: linear-gradient(135deg, #504B8B, rgba(62, 242, 46, 0.3));
@@ -291,8 +309,9 @@ h6{
 
 
 .banner1{
-  background-color: #ffffff;
-  background-image: linear-gradient(135deg, rgba(241, 218, 210, 0.5) 30%, #ffffff);
+  background-color: rgba(234, 151, 94, 1);
+  background-image: linear-gradient(45deg, rgba(161, 186, 137, 0.5) 30%, rgba(234, 151, 94, 1));
+  z-index: -5 !important;
 }
 .banner2{
   background-color: rgba(234, 151, 94, 1);
@@ -307,6 +326,9 @@ h6{
 }
 .banner4 {
   background-color: #FBF0F0;
+}
+.banner5 {
+  background-color: #3D3977;
 }
 .image-cover {
   object-fit: cover;
@@ -498,3 +520,239 @@ body.light .progress-wrap svg.progress-circle path {
 }
 
 /* gallery section - END */
+/* How it Works - START */
+.number1 {
+  transform: rotate(90deg) !important;
+  margin-right: 50px;
+}
+.accordion-img {
+  height: 300px;
+  object-fit:fill;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#accordion-1 {
+  background-image: url(/img/123-5.jpg);
+}
+#accordion-2 {
+  background-image: url(/img/123-2.jpg);
+}
+#accordion-3 {
+  background-image: url(/img/123-3.jpg);
+}
+#accordion-4 {
+  background-image: url(/img/123-4.jpg);
+}
+
+.bg-1 {
+  background-color: #524B8E;
+}
+.horizontal-text-accordion-section {
+  display: grid;
+  grid-template-rows: 540px;
+  grid-template-areas: "heading accordion";
+  overflow:hidden;
+}
+.horizontal-text-accordion-section .heading-wrapper {
+  grid-area: heading;
+  
+  padding-left: 20px;
+  margin: 0 50px 0 auto;
+}
+.horizontal-text-accordion-section .heading-wrapper h1 {
+  width: 80%;
+  margin-left: auto;
+}
+.horizontal-text-accordion-section .accordion-wrapper {
+  grid-area: accordion;
+  display: flex;
+  color: #ffffff;
+  justify-content: flex-end;
+}
+.horizontal-text-accordion-section .accordion-wrapper .accordion {
+  cursor: pointer;
+  position: relative;
+  background-color: #2B2369;
+  border-radius: 8px;
+  width: 96px;
+  margin-right: 24px;
+  transition: all 1s;
+}
+.horizontal-text-accordion-section .accordion-wrapper .accordion h4.accordion-heading {
+  white-space: nowrap;
+}
+.horizontal-text-accordion-section .accordion-wrapper .accordion h4.accordion-heading.vertical {
+  transform: rotate(-90deg);
+  position: absolute;
+  margin-bottom: 23px;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  color: #ffffff;
+}
+.horizontal-text-accordion-section .accordion-wrapper .accordion h4.accordion-heading.horizontal {
+  position: relative;
+  bottom: 0;
+  margin: 0;
+}
+.horizontal-text-accordion-section .accordion-wrapper .accordion .fade {
+  opacity: 0;
+  transition: all 0.2s;
+}
+.horizontal-text-accordion-section .accordion-wrapper .accordion .fade.active {
+  opacity: 1;
+}
+.horizontal-text-accordion-section .accordion-wrapper .accordion .paragraph {
+  width: 90%;
+  margin: 0 0 1.3px;
+}
+.horizontal-text-accordion-section .accordion-wrapper .accordion .paragraph:first-of-type {
+  margin-top: 10px;
+}
+
+.horizontal-text-accordion-section .accordion-wrapper .accordion ul {
+  margin-bottom: 30px;
+  margin-left: -11px;
+}
+.horizontal-text-accordion-section .accordion-wrapper .accordion .content-wrapper {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+}
+.horizontal-text-accordion-section .accordion-wrapper .accordion .content-wrapper a {
+  cursor: pointer;
+  text-decoration: none;
+  height: 35px;
+  padding: 8px 19px;
+  border-radius: 29px;
+  background: white;
+  color: black;
+  letter-spacing: 0;
+  border: 20px solid white;
+  border: none;
+  transition: all 0.4s;
+}
+.horizontal-text-accordion-section .accordion-wrapper .accordion .content-wrapper a:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+.horizontal-text-accordion-section .accordion-wrapper .accordion.active {
+  width: 100%;
+}
+.horizontal-text-accordion-section .accordion-wrapper .accordion.active h4.accordion-heading.vertical {
+  bottom: -100%;
+}
+.horizontal-text-accordion-section .accordion-wrapper .accordion.active .content-wrapper {
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .horizontal-text-accordion-section {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 366px;
+    grid-template-areas: "heading" "accordion";
+  }
+  .horizontal-text-accordion-section .heading-wrapper {
+    text-align: center;
+    width: 80%;
+    margin: 10px auto 0;
+    padding: 0;
+  }
+  .horizontal-text-accordion-section .accordion-wrapper {
+    grid-area: accordion;
+    display: flex;
+    color: #ffffff;
+    margin-left: auto;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  .horizontal-text-accordion-section .accordion-wrapper .accordion {
+    cursor: pointer;
+    position: relative;
+    border-radius: 8px;
+    width: 46px;
+    margin-right: 15px;
+    transition: all 1s;
+  }
+  .horizontal-text-accordion-section .accordion-wrapper .accordion h5.accordion-heading {
+    white-space: nowrap;
+    margin-bottom: 24px;
+  }
+  .horizontal-text-accordion-section .accordion-wrapper .accordion h5.accordion-heading.vertical {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+  }
+  .horizontal-text-accordion-section .accordion-wrapper .accordion.active {
+    width: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .fade {
+    width: 80%;
+  }
+  .number1 {
+    transform: rotate(0deg) !important;
+    margin-right: 10px;
+  }
+  .horizontal-text-accordion-section {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "heading" "accordion";
+  }
+  .horizontal-text-accordion-section .heading-wrapper {
+    text-align: center;
+    width: 80%;
+    margin: 30px auto;
+  }
+  .horizontal-text-accordion-section .accordion-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .horizontal-text-accordion-section .accordion-wrapper .accordion {
+    width: 120%;
+    height: 72.4px;
+    margin: 15px auto 0;
+    display: flex;
+    align-items: center;
+  }
+  .horizontal-text-accordion-section .accordion-wrapper .accordion h4.accordion-heading.vertical {
+    transform: rotate(0deg);
+    left: 10px;
+    bottom: -15px;
+  }
+  .horizontal-text-accordion-section .accordion-wrapper .accordion h4.accordion-heading.horizontal {
+    margin-top: 10px;
+  }
+  .horizontal-text-accordion-section .accordion-wrapper .accordion.active {
+    height: auto;
+    width: 120%;
+    padding: 0;
+  }
+  .horizontal-text-accordion-section .accordion-wrapper .accordion.active .content-wrapper {
+    padding: 20px 35px;
+  }
+}
+@media (max-width: 490px) {
+  .horizontal-text-accordion-section .accordion-wrapper .accordion.active .content-wrapper {
+    padding: 20px;
+  }
+}
+/* How it Works - END */
+.section-5 {
+  margin-bottom: -342px;
+}
+.bg-2 {
+  background-image: url(/img/bg-1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}

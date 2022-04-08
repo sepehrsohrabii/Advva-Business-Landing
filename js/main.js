@@ -1,29 +1,4 @@
 $(document).ready(function() {
-/* Form Section */
-const form = document.getElementById('form');
-const steps = document.querySelectorAll('#steps span');
-form.addEventListener('slide.bs.carousel', function (e) {
-  steps.forEach((step, index) => {
-    if(e.to >= index){
-      step.classList.add('activate');
-    }else{
-      step.classList.remove('activate');
-    }
-  });
-});
-
-const formtwo = document.getElementById('formtwo');
-const stepstwo = document.querySelectorAll('#stepstwo span');
-
-formtwo.addEventListener('slide.bs.carousel', function (e) {
-  stepstwo.forEach((step, index) => {
-    if(e.to >= index){
-      step.classList.add('activate');
-    }else{
-      step.classList.remove('activate');
-    }
-  });
-});
 /* gallery section */
 const galleryRows = document.querySelectorAll('.gallery-row');
 galleryRows.forEach((el, index) => {
@@ -223,6 +198,17 @@ galleryRows.forEach((el, index) => {
     opacity: 0,
     duration: 2
   });
+  gsap.from(".section-21", {
+    scrollTrigger: {
+      trigger: ".section-21",
+      toggleActions: "play reverse play reverse",
+    },
+    opacity: 0,
+    duration: 1
+  });
+
+
+
   gsap.from(".section-13", {
     scrollTrigger: {
       trigger: ".section-13",
@@ -297,22 +283,13 @@ galleryRows.forEach((el, index) => {
     y: -100,
     duration: 2
   });
-  gsap.from(".section-21", {
-    scrollTrigger: {
-      trigger: ".section-21",
-      toggleActions: "play reverse play reverse",
-      scrub: 1,
-    },
-    scale: 0.8,
-    duration: 2
-  });
   gsap.from(".section-22", {
     scrollTrigger: {
       trigger: ".section-22",
       toggleActions: "play reverse play reverse",
       scrub: 1,
     },
-    scale: 0.8,
+    y: -100,
     duration: 2
   });
   gsap.from(".section-23", {
@@ -321,27 +298,10 @@ galleryRows.forEach((el, index) => {
       toggleActions: "play reverse play reverse",
       scrub: 1,
     },
-    scale: 0.8,
-    duration: 2
-  });
-  gsap.from(".section-24", {
-    scrollTrigger: {
-      trigger: ".section-24",
-      toggleActions: "play reverse play reverse",
-      scrub: 1,
-    },
-    scale: 0.8,
-    duration: 2
-  });
-  gsap.from(".section-25", {
-    scrollTrigger: {
-      trigger: ".section-25",
-      toggleActions: "play reverse play reverse",
-      scrub: 1,
-    },
     y: -100,
     duration: 2
   });
+  
   gsap.from(".section-26", {
     scrollTrigger: {
       trigger: ".section-26",
@@ -385,24 +345,6 @@ galleryRows.forEach((el, index) => {
       scrub: 1,
     },
     x: -50,
-    duration: 2
-  });
-  gsap.from(".section-31", {
-    scrollTrigger: {
-      trigger: ".section-31",
-      toggleActions: "play reverse play reverse",
-      scrub: 1,
-    },
-    y: -50,
-    duration: 2
-  });
-  gsap.from(".section-32", {
-    scrollTrigger: {
-      trigger: ".section-32",
-      toggleActions: "play reverse play reverse",
-      scrub: 1,
-    },
-    y: +50,
     duration: 2
   });
   gsap.from(".section-33", {
@@ -508,3 +450,15 @@ $(document).ready(function(){"use strict";
 })(jQuery);
 
 
+/* how it works */
+ 
+var accordion = $(".accordion");
+accordion.on("click", function () {
+  var $this = $(this);
+  accordion.removeClass("active");
+  accordion.find(".fade").removeClass("active");
+  $this.addClass("active");
+  setTimeout(function () {
+    $this.find(".fade").addClass("active");
+  }, 1000);
+});
