@@ -292,8 +292,7 @@ h6{
 }
 
 .form-banner2 {
-  background-color: #504B8B;
-  background-image: linear-gradient(135deg, #504B8B, rgba(62, 242, 46, 0.3));
+  background-color: #433870;
 }
 .box1 {
   background-color: #ff932e;
@@ -309,26 +308,22 @@ h6{
 
 
 .banner1{
-  background-color: rgba(234, 151, 94, 1);
-  background-image: linear-gradient(45deg, rgba(161, 186, 137, 0.5) 30%, rgba(234, 151, 94, 1));
-  z-index: -5 !important;
+  background-color: #F38F33;
 }
 .banner2{
-  background-color: rgba(234, 151, 94, 1);
-  background-image: linear-gradient(90deg, rgba(161, 186, 137, 0.5), rgba(234, 151, 94, 1));
+  background-color: #F38F33;
 }
 .color1 {
   color: #4F4C7E;
 }
 .banner3 {
-  background-color: #EA975E;
-  background-image: linear-gradient(90deg, #EA975E, rgba(241, 218, 210, 0.5));
+  background-color: #F38F33;
 }
 .banner4 {
   background-color: #FBF0F0;
 }
 .banner5 {
-  background-color: #3D3977;
+  background-color: #433870;
 }
 .image-cover {
   object-fit: cover;
@@ -556,7 +551,6 @@ body.light .progress-wrap svg.progress-circle path {
 }
 .horizontal-text-accordion-section .heading-wrapper {
   grid-area: heading;
-  
   padding-left: 20px;
   margin: 0 50px 0 auto;
 }
@@ -577,7 +571,7 @@ body.light .progress-wrap svg.progress-circle path {
   border-radius: 8px;
   width: 96px;
   margin-right: 24px;
-  transition: all 1s;
+  transition: all 0.25s;
 }
 .horizontal-text-accordion-section .accordion-wrapper .accordion h4.accordion-heading {
   white-space: nowrap;

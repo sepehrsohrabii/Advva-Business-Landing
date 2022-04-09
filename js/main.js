@@ -140,7 +140,7 @@ galleryRows.forEach((el, index) => {
       toggleActions: "play reverse play reverse",
     },
     opacity: 0,
-    duration: 2
+    duration: 1
   });
   gsap.from(".section-6", {
     scrollTrigger: {

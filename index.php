@@ -281,7 +281,7 @@
                                 <h4 class="accordion-heading horizontal fw-bold text-white">Choose Number of Cars</h4>
                                 <div class="paragraph">
                                   <h5 class="fw-normal">15 CARS</h5>
-                                  <p>3,420,000 monthly impressions</p>
+                                  <p>Flood the roads of any top 200 market in the country, with an army of wrapped Uber, Lyft, and Grubhub drivers</p>
                                 </div>
                               </div>
                             </div>
@@ -322,10 +322,10 @@
           </div>
           
           <!-- Form Section -->
-         <div class="banner1 section-21">
+         <div class="banner1">
            <div class="container">
              <div class="sp-371"></div>
-             <div class="row pb-5 mb-5">
+             <div class="row pb-5 mb-5 section-21" id="sign_up">
                <div class="col-12 col-md-5 section-22 pb-5 align-self-center text-center text-md-start">
                  <h3 class="text-white">Become a Partner</h3>
                  <h4 class="fw-normal text-white">Drop us a line. We’ll respond asap.</h4>
