@@ -261,13 +261,13 @@ h6{
 }
 .button1{
   color: white;
-  background-color: #F2642E;
+  background-color: #00662F;
   max-width: fit-content !important;
   border: none;
 }
 .button2{
   color: white;
-  background-color: #F2642E;
+  background-color: #00662F;
   border: none;
 }
 .btn2-green {
@@ -292,7 +292,7 @@ h6{
 }
 
 .form-banner2 {
-  background-color: #433870;
+  background-color: #4B4A6F;
 }
 .box1 {
   background-color: #ff932e;
@@ -308,22 +308,22 @@ h6{
 
 
 .banner1{
-  background-color: #F38F33;
+  background-color: #E59447;
 }
 .banner2{
-  background-color: #F38F33;
+  background-color: #E59447;
 }
 .color1 {
   color: #4F4C7E;
 }
 .banner3 {
-  background-color: #F38F33;
+  background-color: #E59447;
 }
 .banner4 {
   background-color: #FBF0F0;
 }
 .banner5 {
-  background-color: #433870;
+  background-color: #4B4A6F;
 }
 .image-cover {
   object-fit: cover;
@@ -749,4 +749,7 @@ body.light .progress-wrap svg.progress-circle path {
   background-repeat: no-repeat;
   background-size: cover;
   
+}
+.bg-shadow {
+  filter: drop-shadow(0px 50px 56px rgba(225, 156, 100, 0.25));
 }

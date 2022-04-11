@@ -392,6 +392,41 @@ galleryRows.forEach((el, index) => {
     y: -50,
     duration: 2
   });
+  gsap.from(".section-38", {
+    scrollTrigger: {
+      trigger: ".section-38",
+      toggleActions: "play reverse play reverse",
+    },
+    opacity: 0,
+    duration: 2
+  });
+  gsap.from(".section-39", {
+    scrollTrigger: {
+      trigger: ".section-39",
+      toggleActions: "play reverse play reverse",
+      scrub: 1,
+    },
+    y: -100,
+    duration: 2
+  });
+  gsap.from(".section-40", {
+    scrollTrigger: {
+      trigger: ".section-40",
+      toggleActions: "play reverse play reverse",
+    },
+    opacity: 0,
+    duration: 2
+  });
+  gsap.from(".section-41", {
+    scrollTrigger: {
+      trigger: ".section-41",
+      toggleActions: "play reverse play reverse",
+      scrub: 1,
+    },
+    scale: 0.5,
+    y: -100,
+    duration: 2
+  });
   /*
   gsap.from(".section-38", {
     scrollTrigger: {

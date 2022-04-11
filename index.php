@@ -84,7 +84,7 @@
               <div class="col align-self-center text-end d-none d-md-inline">
                 <a href=""><b class="text-secondary">Become Partner</b></a>
                 <img class="mx-3" src="/img/H-Line.svg" alt="Seperator Line">
-                <a href=""><b>Become Driver</b></a>
+                <a href="https://demodrivers.advva.com"><b>Become Driver</b></a>
               </div>
               <div class="col align-self-center text-end d-md-none">
                 <button class="navbar-toggle" id="toggle" type="button">
@@ -377,9 +377,27 @@
              </div>
            </div>
          </div>
-          
+
+          <!-- Web App Section -->
+          <div class="section-38 container mt-121">
+            <div class="section-39 row text-center ">
+              <h2>Professional Panel</h2>
+              
+            </div>
+          </div>
+          <!-- Full width web app picture-->
+          <div class="bg-2">
+            <div class="section-40 section-41 text-center mbapp-pic mx-md-5 px-md-5">
+              <img src="/img/webapp.png" alt="Advva Web App">
+            </div>
+          </div>
+          <!-- SingUp Banner -->
+          <div class="section-8 banner3 text-center py-5">
+            <h4 class="fw-bold white mt-5 p-5">Don’t miss your next opportunity!</h4>
+            <a href="#sign_up2"><button class="section-28 button1 mb-5 mt-4 py-2 px-5" href="#sign_up2">Sign up today</button></a>
+          </div>
           <!-- Gallery Section -->
-          <div class="section-6 py-5">
+          <div class="banner4 section-6 py-5">
             <div class="container overflow-hidden my-5">
               <section class="section-gallery gallery">
                 <div class="row gallery-row"> 
@@ -428,11 +446,7 @@
               
             </div>
           </div>
-          <!-- SingUp Banner -->
-          <div class="section-8 banner3 text-center my-5 py-5">
-            <h4 class="fw-bold white mt-5 p-5">Don’t miss your next opportunity!</h4>
-            <a href="#sign_up2"><button class="section-28 button1 mb-5 mt-4 py-2 px-5" href="#sign_up2">Sign up today</button></a>
-          </div>
+          
           <!-- Mobile App Section -->
           <div class="section-3 container mt-121">
             <div class="section-15 row text-center ">
@@ -463,7 +477,7 @@
           <!-- Full width mobiles app picture-->
           <div class="bg-2">
             <div class="section-4 section-19 text-center mbapp-pic mx-md-5 px-md-5">
-              <img src="/img/Mobile-App.png" alt="Advva Mobile App">
+              <img class="bg-shadow" src="/img/Mobile-App.png" alt="Advva Mobile App">
             </div>
           </div>
           
@@ -623,7 +637,7 @@
           <div class="section-12 container mt-md-0 mt-121 py-md-5">
             <div class="section-37 row my-md-4 py-md-4 justify-content-around">
               <div class="col-12 col-md-2 align-self-center text-center text-md-start">
-                <img class="section-38" src="/img/Logo.svg" alt="Advva Logo" height="60px">
+                <img src="/img/Logo.svg" alt="Advva Logo" height="60px">
               </div>
               <div class="col-12 col-md-2 align-self-center text-center text-md-start mt-4 mt-md-0">
                 <h6 class="fw-normal">
