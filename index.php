@@ -387,13 +387,20 @@
           </div>
           <!-- Full width web app picture-->
           <div class="bg-2">
-            <div class="section-40 section-41 text-center mbapp-pic mx-md-5 px-md-5">
-              <img src="/img/webapp.png" alt="Advva Web App">
+          <!--section-40 section-41--> 
+            <div class="text-center section-41 mx-md-5 px-md-5 position-relative">
+              <img class="img-1 position-absolute" src="/img/section/Mask group.png" alt="Advva Web App">
+              <img class="img-2 position-absolute" src="/img/section/Widget 2 1.png" alt="Advva Web App">
+              <img class="img-3 position-absolute" src="/img/section/Widget 3 1.png" alt="Advva Web App">
+              <img class="img-4 position-absolute" src="/img/section/Widget 4 1.png" alt="Advva Web App">
+              <img class="img-5 position-absolute" src="/img/section/Group 480 1.png" alt="Advva Web App">
+              <img class="img-6 position-absolute" src="/img/section/Group 481 1.png" alt="Advva Web App">
+              <img class="img-7 position-absolute" src="/img/section/Group 482 1.png" alt="Advva Web App">
             </div>
           </div>
           <!-- SingUp Banner -->
           <div class="section-8 banner3 text-center py-5">
-            <h4 class="fw-bold white mt-5 p-5">Don’t miss your next opportunity!</h4>
+            <h2 class="fw-bold white mt-5 p-5">Don’t miss your next opportunity!</h2>
             <a href="#sign_up2"><button class="section-28 button1 mb-5 mt-4 py-2 px-5" href="#sign_up2">Sign up today</button></a>
           </div>
           <!-- Gallery Section -->

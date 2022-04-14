@@ -427,6 +427,85 @@ galleryRows.forEach((el, index) => {
     y: -100,
     duration: 2
   });
+  gsap.from(".img-1", {
+    scrollTrigger: {
+      trigger: ".img-1",
+      toggleActions: "play reverse play reverse",
+      scrub: 1,
+      end: 'top center',
+    },
+    scale: 0.5,
+    
+    duration: 2
+  });
+  gsap.from(".img-2", {
+    scrollTrigger: {
+      trigger: ".img-2",
+      toggleActions: "play reverse play reverse",
+      scrub: 1,
+      end: 'top center',
+    },
+    scale: 0.5,
+    y: -100,
+    duration: 2
+  });
+  gsap.from(".img-3", {
+    scrollTrigger: {
+      trigger: ".img-3",
+      toggleActions: "play reverse play reverse",
+      scrub: 1,
+      end: 'top center',
+    },
+    scale: 0.5,
+    y: +100,
+    duration: 2
+  });
+  gsap.from(".img-4", {
+    scrollTrigger: {
+      trigger: ".img-4",
+      toggleActions: "play reverse play reverse",
+      scrub: 1,
+      end: 'top center',
+    },
+    scale: 0.5,
+    y: -20,
+    duration: 2
+  });
+  gsap.from(".img-5", {
+    scrollTrigger: {
+      trigger: ".img-5",
+      toggleActions: "play reverse play reverse",
+      scrub: 1,
+      end: 'top center',
+    },
+    scale: 0.5,
+    x: +100,
+    duration: 2
+  });
+  gsap.from(".img-6", {
+    scrollTrigger: {
+      trigger: ".img-6",
+      toggleActions: "play reverse play reverse",
+      scrub: 1,
+      end: 'top bottom',
+      
+    },
+    scale: 0.5,
+    x: -4000,
+    duration: 2
+  });
+  gsap.from(".img-7", {
+    scrollTrigger: {
+      trigger: ".img-7",
+      toggleActions: "play reverse play reverse",
+      scrub: 1,
+      end: 'top bottom',
+      
+    },
+    scale: 0.5,
+    x: -4000,
+    duration: 2
+  });
   /*
   gsap.from(".section-38", {
     scrollTrigger: {
